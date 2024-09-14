@@ -126,3 +126,29 @@ ul li a {
     max-width: 80rem;
     margin-top: 1.7rem;
 }
+.slider-text{
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    
+    
+}
+.text-item{
+    width: 100%;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 1.8em;
+    transition: .5s ease-out;
+}
+#slid1:target ~ .footer .slid{
+    transform: translateX(0);
+}
+#slid2:target ~ .footer .slid{
+    transform: translateX(-100%);
+}
+#slid3:target ~ .footer .slid{
+    transform: translateX(-200%);
+}
+#slid4:target ~ .footer .slid{
+    transform: translateX(-300%);
+}
