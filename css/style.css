@@ -1,6 +1,7 @@
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 * {
     margin: 0;
@@ -12,4 +13,46 @@ html{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    background-color: rgb(61, 53, 53);
+
+}
+
+.slider-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: clamp(90vw, 100%, 80rem);
+    margin: 0 auto;
+
+
+}
+.slid1,
+.slid2,
+.slid3,
+.slid4{
+    visibility: none;
+}
+.slider{
+    display: flex;
+    max-width: 80rem;
+    overflow: hidden;
+    align-items: flex-end;
+    border-radius: 1rem;
+}
+.slider-item{
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+.slid{
+    transition: .5s ease-out;
+}
+.slider-img{
+    width: 100%;
+    height: 70vh;
 }
