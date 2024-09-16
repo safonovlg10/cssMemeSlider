@@ -75,12 +75,12 @@ ul{
 ul li {
 
     display: inline-block;
-    margin: 0.8em;
+    margin: 0.2em;
 }
 ul li a { 
     display: inline-block;
-    padding: 20px;
-    background-color: aqua;
+    padding: 0.625rem;
+    background-color: transparent;
    
 }
 .border{
@@ -96,26 +96,25 @@ ul li a {
     transition: .2s ease-in-out;
 }
 
-.control-dots ul li a {
+.control-dots ul li a span {
 	background-color: rgba(255,255,255,.5);
 	border-radius: 50%;
 }
-.control-dots ul li a:hover {
+.control-dots ul li a:hover span {
 	background-color: rgba(255,255,255,1);
 }
-#slid1:target ~ .footer .control-dots .active1,
-#slid2:target ~ .footer .control-dots .active2,
-#slid3:target ~ .footer .control-dots .active3,
-#slid4:target ~ .footer .control-dots .active4
+#slid1:target ~ .footer .control-dots .active1 span,
+#slid2:target ~ .footer .control-dots .active2 span,
+#slid3:target ~ .footer .control-dots .active3 span,
+#slid4:target ~ .footer .control-dots .active4 span
 {
     background-color: transparent;
 	box-shadow: 0 0 0 0.125rem rgba(255,255,255,.5);
 }
-
-#slid1:target ~ .footer .control-dots .active1:hover,
-#slid2:target ~ .footer .control-dots .active2:hover,
-#slid3:target ~ .footer .control-dots .active3:hover,
-#slid4:target ~ .footer .control-dots .active4:hover
+#slid1:target ~ .footer .control-dots .active1:hover span,
+#slid2:target ~ .footer .control-dots .active2:hover span,
+#slid3:target ~ .footer .control-dots .active3:hover span,
+#slid4:target ~ .footer .control-dots .active4:hover span
 {
     background-color: transparent;
 	box-shadow: 0 0 0 0.125rem rgba(255,255,255,1);
