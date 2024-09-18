@@ -3,9 +3,7 @@ html{
     scroll-behavior: smooth;
     
 }
-*,
-*::before,
-*::after{
+*{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -154,7 +152,7 @@ ul li a {
 
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 31.2rem){
     .footer{
         flex-direction: column-reverse;
     }
